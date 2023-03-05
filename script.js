@@ -17,8 +17,8 @@ function setGame(){
         tile.addEventListener("click",selectTile);
         document.getElementById("board").appendChild(tile);
     }
-    setInterval(setPalp,2000); //2000ms or 2 secs
-    setInterval(setYoda,4000);
+    setInterval(setPalp,1000); //2000ms or 2 secs
+    setInterval(setYoda,3000);
 }
 
 function randomTile() {
@@ -36,7 +36,7 @@ function setPalp() {
         palpTile.innerHTML="";
     }
     let palp =document.createElement("img");
-    palp.src = "./images/palp.webp"
+    palp.src = "./images/palp.png"
     let num = randomTile(); //number of the tile assigned randomly to put palp into it
     if (palpTile && palpTile.id==num){ // to make sure they dont land on the same tile
         return;

@@ -1,14 +1,16 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    background:url("./images/starwars_bg.webp");
+    
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/starwars_bg.webp');
+
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #board{
-    width: 540px;
-    height: 540px;
+    width: 510px;
+    height: 510px;
 
     margin: 0 auto;
     display: flex;
@@ -22,14 +24,31 @@ body{
 }
 
 #board div{
-    width: 180px; /*because the whole board is 540 so you wanna have 3 x 3 so we div by 3 to get a cell size of 180px */
-    height: 180px;
+    width: 170px; /*because the whole board is 540 so you wanna have 3 x 3 so we div by 3 to get a cell size of 180px */
+    height: 170px;
     background-image: url("./images/pot.png");
     background-size: auto;
+    background-position: center;
 
 }
 
 #board div img {
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+#h1 {
+    color: yellow;
+    background-color: black;
+    background-size: auto;
+    display: inline-block;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
