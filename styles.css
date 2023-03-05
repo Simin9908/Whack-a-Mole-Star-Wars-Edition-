@@ -2,6 +2,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     background:url("./images/starwars_bg.webp");
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
